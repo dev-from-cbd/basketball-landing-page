@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adelaide 36ers not Official Website</title>
+
+    <!-- css link -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- fontawesome CDN 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+     end of fontawesome CDN -->
+
+    <link rel="shortcut icon" href="img/fav.png" />
+  </head>
+  <body>
+    <section class="home">
+      <header>
+        <a href="#" class="logo">Adelaide 36ers</a>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <!-- 
+          <li><a href="#">Product</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">Arrival</a></li>
+          <li><a href="#">About</a></li>
+          -->
+          <li>
+            <a href="https://www.adelaide36ers.com/pages/club-staff"
+              >Contacts</a
+            >
+          </li>
+        </ul>
+      </header>
+      <div class="content">
+        <div class="textBox">
+          <h2>That's what<br /><span>I like</span></h2>
+          <p>
+            The Adelaide 36ers (also well known as the Sixers) are an Australian
+            professional men's basketball team that competes in the National
+            Basketball League (NBL). The 36ers are the only team in the league
+            representing the state of South Australia and are based in the state
+            capital, Adelaide.
+          </p>
+          <a href="https://www.adelaide36ers.com/"
+            >View Adelaide 36ers Official Website</a
+          >
+        </div>
+        <div class="imgBox">
+          <img src="img/CJBruton.png" alt="C. J. Bruton" class="sports" />
+        </div>
+      </div>
+      <ul class="thumb">
+        <li>
+          <img
+            src="img/Tad-Dufelmeier.png"
+            alt="Tad Dufelmeier"
+            onclick="imgSlider('img/Tad-Dufelmeier.png'); changeColor('#566a3b');"
+          />
+        </li>
+
+        <li>
+          <img
+            src="img/EmmanuelMalou.png"
+            alt="Emmanuel Malou"
+            onclick="imgSlider('img/EmmanuelMalou.png'); changeColor('#566a3b');"
+          />
+        </li>
+
+        <li>
+          <img
+            src="img/Dusty-Hannahs.png"
+            alt="Dusty Hannahs"
+            onclick="imgSlider('img/Dusty-Hannahs.png'); changeColor('#a18c02');"
+          />
+        </li>
+
+        <li>
+          <img
+            src="img/Cameron.png"
+            alt="Cameron Bairstow"
+            onclick="imgSlider('img/Cameron.png'); changeColor('#2236b4');"
+          />
+        </li>
+      </ul>
+    </section>
+  </body>
+</html>
+
+<script>
+  function imgSlider(someThing) {
+    document.querySelector(".sports").src = someThing;
+  }
+  function changeColor(color) {
+    const sec = document.querySelector(".home");
+    sec.style.background = color;
+  }
+</script>
